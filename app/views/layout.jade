@@ -1,0 +1,16 @@
+doctype html
+- var base_path = 'http://wp20.wicp.net';
+script(type="text/javascript").
+  var base_path = "#{base_path}/";
+script(type="text/javascript",src="/bower_components/requirejs/require.js")
+script(type="text/javascript",src="/javascripts/app.js")
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(chatset='utf-8')
+    meta(name='viewport',content='width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no')
+    meta(name='apple-mobile-web-app-capable',content='yes')
+    meta(name='apple-touch-fullscreen',content='yes')
+  body
+    block content

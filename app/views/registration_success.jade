@@ -1,0 +1,16 @@
+extends layout.jade
+
+block content
+    link(rel='stylesheet', href='/stylesheets/wechat2.css')
+
+    .action-img
+        img(src="/images/bu_tie_bang.png")
+    .all
+        div: img(src="/images/succeed.png")
+        .succeed_font
+            p 恭喜您成功报名【腾讯·大秦家居】补贴帮《装修抢补贴》活动 ！
+            p 您的装修补贴兑换码为：
+            span #{validateCode}
+            p 兑换地址：腾讯·大秦家居线下体验店（西安市丈八东路与子午大道十字东南角帮众宝）
+            p 预约咨询电话：4000-560-365
+

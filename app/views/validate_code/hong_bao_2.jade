@@ -1,0 +1,20 @@
+extends ../layout2
+
+block content
+    link(rel='stylesheet', href='/stylesheets/hong_bao_2.css')
+    div
+        .row(style="border-radius:10px;")
+            .col-xs-12.col-sm-12
+                .butie_bga(style="text-align:center;")
+                    img(src="/images/bg3.png")
+                .content
+                    .butie_bg(style="text-align: center;margin-top:50px;border-bottom: 1px dotted #DBDBDB;padding-bottom: 33px;")
+                        img(src="/images/bg4.png")
+                    a(href="/hong_bao_3.html",style="color:#020202").xiangqing 兑换劵详情
+                    a(href="/hong_bao_3.html",style="color:#020202").xiangqing 兑换码：
+                        - if(docs.length > 0)
+                            | #{docs[0].validate_code}
+                        - else
+                            | 尚未报名
+                    a(href="/hong_bao_3.html",style="color:#020202").gongyong 公众号：补贴帮
+                    a(href="/hong_bao_3.html").shiyong 立即使用

@@ -1,0 +1,29 @@
+body {
+    background:#E1E4E9;
+    padding:20px
+}
+.all {
+    box-sizing:border-box;
+    margin:20px 10px;
+    text-align: center;
+}
+.submit-btn {
+    background:#f60;
+    color:#ffffff;
+    box-sizing:border-box;
+    margin:10px;
+    text-align:center;
+    height:2.5em;
+    line-height:2.5em;
+    font-size:1.1em;
+    font-weight:bold;
+    -webkit-border-radius:0px;
+    margin-top:200px;
+}
+.succeed_font{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+.succeed_font span{color:#FF0005}
+.action-img img{max-width:100%;height:auto;}

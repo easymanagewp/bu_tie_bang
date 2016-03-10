@@ -1,0 +1,60 @@
+body {
+    background:#fff;
+}
+.all {
+    box-sizing:border-box;
+    background:#ffffff;
+    overflow:hidden;
+    margin:20px 10px;
+    border-top:1px solid #CFCFCF;
+    border-left:1px solid #CFCFCF;
+    border-right:1px solid #CFCFCF;
+
+}
+.all div{
+    height:50px;
+    line-height: 50px;
+    border-bottom:1px solid #CFCFCF;
+    width: 100%;
+}
+.all span{
+    margin-left:10px;
+}
+.all img{
+    margin-left:10px;
+    vertical-align:middle;
+}
+.all input{
+    border:0px;
+    box-sizing:border-box;
+    width:68%;
+    padding:0px;
+    padding-left:5px;
+    font-size:1em;
+    -webkit-border-radius:0px;
+    height:40px;
+    line-height: 40px;
+}
+.submit-btn {
+    background:#f60;
+    color:#ffffff;
+    box-sizing:border-box;
+    margin:10px;
+    text-align:center;
+    height:2.5em;
+    line-height:2.5em;
+    font-size:1.1em;
+    font-weight:bold;
+    -webkit-border-radius:0px;
+    margin-top:200px;
+}
+.test{
+    background: #ddd;
+    text-align: center;
+    display: inline-block;
+    border-right:1px solid #cfcfcf;
+    float: right;
+    width:35%;
+    text-decoration: none
+}
+em{font-style: normal;color:#f60;font-weight:bold;}

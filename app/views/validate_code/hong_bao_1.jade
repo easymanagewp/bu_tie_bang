@@ -1,0 +1,13 @@
+extends ../layout2
+
+block content
+    link(rel='stylesheet', href='/stylesheets/hong_bao_1.css')
+    .container
+        - for(var iIndex=0;iIndex<docs.length;iIndex++)
+            a(href="/hong_bao_2.html")
+                .row(style="padding:20px;background: #fff;border-radius:10px;width:100%")
+                    .col-xs-12.col-sm-12.butie_bg
+                        img(src="/images/bg5.png")
+                        .span
+                            | 尊敬的用户，感谢您参加本次《装修抢补贴》栏目，你的兑换码是：
+                            span=docs[iIndex].validate_code

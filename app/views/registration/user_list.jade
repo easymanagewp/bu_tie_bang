@@ -1,0 +1,44 @@
+doctype html
+html
+    head
+        title= title
+        meta(chatset='utf-8')
+        link(rel='stylesheet', href='/stylesheets/user.css')
+        script(type="text/javascript")
+            | var base_path = "http://localhost/";
+        script(type="text/javascript",src="/bower_components/requirejs/require.js")
+        script(type="text/javascript",src="/javascripts/app.js")
+        script(src="/javascripts/user_list.js")
+        style.
+            table tr td{border:solid 1px #333333;}
+
+
+    body
+        | 兑换码:
+        input#validate_code(value=query.validate_code)
+        | 手机号：
+        input#mobile(value=query.mobile)
+        a(href="javascript:void(0)")#search 查询
+        table(cellpadding="0",cellspacing="0",border="0").user_table
+            tr
+                th="头像"
+                th="昵称"
+                th="推广人"
+                th="联系电话"
+                th="报名兑换码"
+                th="关注时间"
+            - for(var iIndex=0;iIndex<docs.length;iIndex++)
+                tr
+                    td.center: img(src=docs[iIndex].head_img,width=50,height=50)
+                    td.left=docs[iIndex].nickname
+                    td=docs[iIndex].parent && docs[iIndex].parent.nickname
+                    td=docs[iIndex].mobile
+                    td
+                        | #{docs[iIndex].validate_code}&nbsp;&nbsp;&nbsp;
+                        - if(docs[iIndex].validate_code!=null && !(docs[iIndex].is_used))
+                            a(href="javascript:void",onclick="use('"+docs[iIndex]._id+"')") 兑换
+                        - if(docs[iIndex].validate_code!=null && docs[iIndex].is_used)
+                            | 已兑换
+                    - var create_time = docs[iIndex].create_time.getFullYear()+"-"+(docs[iIndex].create_time.getMonth()+1)+"-"+(docs[iIndex].create_time.getDate())
+                    td=create_time
+

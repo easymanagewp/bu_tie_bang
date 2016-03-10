@@ -1,0 +1,15 @@
+{
+  "name": "jquery.validate",
+  "homepage": "https://github.com/ikajou/jquery-validation",
+  "version": "1.11.0",
+  "_release": "1.11.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.11.0",
+    "commit": "8caa0b748068ba34cdb28ec818beff86c51820c6"
+  },
+  "_source": "git://github.com/ikajou/jquery-validation.git",
+  "_target": "1.11.0",
+  "_originalSource": "jquery.validate",
+  "_direct": true
+}
